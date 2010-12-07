@@ -1,0 +1,181 @@
+html {
+  overflow: hidden;
+}
+#container {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  background: black;
+}
+header {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  font-weight: bold;
+  background: url(../images/logo.png);
+  background-repeat: no-repeat;
+}
+header a {
+  display: block;
+  right: 10px;
+  color: yellow;
+  font-size: 10px;
+  position: absolute;
+  text-decoration: none;
+}
+footer {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 30px;
+  text-align: center;
+  color: #CCC;
+  line-height: 30px;
+  font-size: 10px;
+}
+a {
+  outline: none;
+}
+#main {
+  position: absolute;
+  top: 30px; bottom: 30px; left: 0; right: 0;
+  background-image: url(/images/wood.jpg);
+  background-position: 50% 50%;
+}
+.comic {
+  width: 200px;
+  height: 240px;
+  position: relative;
+  float: left;
+  margin: 30px;
+  
+}
+.comic h2 {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  font-size: 12px;
+  text-shadow: 0px 0px 3px #000;
+  text-align: center;
+  width: 190px;
+  background: rgba(0,0,0,0.6);
+  padding: 5px;
+  z-index: 1000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.comic .page {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.comic:hover .page {
+  width: 200px;
+  height: 200px;
+  left: 0;
+  top: 0;
+}
+.comic:hover .page img {
+  border-color: white;
+}
+.comic .page img {
+  max-height: 100%;
+  max-width: 100%;
+  border: 3px solid #eee;
+  box-shadow: 0px 0px 3px #000;
+  -moz-box-shadow: 0px 0px 3px #000;
+  -webkit-box-shadow: 0px 0px 3px #000;
+}
+.comic .page-1 {
+  z-index: 5;
+}
+.comic .page-2 {
+  z-index: 4;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+.comic .page-3 {
+  z-index: 3;
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+}
+.comic .page-4 {
+  z-index: 2;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+.comic .page-5 {
+  z-index: 1;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+.comic:hover .page-2 {
+  margin-left: -10px;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+.comic:hover .page-3 {
+  margin-left: -20px;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+.comic:hover .page-4 {
+  margin-left: 10px;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+.comic:hover .page-5 {
+  margin-left: 20px;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+.clear {
+  clear: both;
+  line-height: 1px;
+}
+#read-comic {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+}
+#read-comic img {
+  margin: 20px;
+  box-shadow: 0px 0px 10px #000;
+  -moz-box-shadow: 0px 0px 10px #000;
+  -webkit-box-shadow: 0px 0px 10px #000;
+}
+#read-comic .next, #read-comic .prev {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: url(/images/prev.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.1;
+}
+#read-comic .prev {
+  left: 10px;
+}
+#read-comic .next {
+  background-image: url(/images/next.png);
+  right: 10px;
+}
+#read-comic .next:hover, #read-comic .prev:hover {
+  opacity: 1;
+}

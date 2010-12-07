@@ -1,0 +1,287 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+            "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<title>Download Builder</title>
+		<link rel="stylesheet" type='text/css' href='download.css' />
+	</head>
+	<body>
+		<p>Choose the plugins you want as standalone scripts, then hit submit.  You'll be given a 
+		zip file that includes each plugin with all its dependencies packaged up, and a minified version.  To use them, 
+		include jQuery in your page, then include the plugin file.</p>
+		<h1>Plugins</h1>
+        <div id='plugins'></div>
+		<form type="POST" action="http://jmvcsite.heroku.com/pluginify" id="pluginForm">
+
+<div class="plugin">
+	<label>steal/dev/dev.js</label>
+	<input type="checkbox" value="steal/dev/dev.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/class/class.js</label>
+	<input type="checkbox" value="jquery/class/class.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/jquery.js</label>
+	<input type="checkbox" value="jquery/jquery.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/controller/controller.js</label>
+	<input type="checkbox" value="jquery/controller/controller.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/lang/lang.js</label>
+	<input type="checkbox" value="jquery/lang/lang.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/event/destroyed/destroyed.js</label>
+	<input type="checkbox" value="jquery/event/destroyed/destroyed.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/event/event.js</label>
+	<input type="checkbox" value="jquery/event/event.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/controller/history/history.js</label>
+	<input type="checkbox" value="jquery/controller/history/history.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/controller/subscribe/subscribe.js</label>
+	<input type="checkbox" value="jquery/controller/subscribe/subscribe.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/lang/openajax/openajax.js</label>
+	<input type="checkbox" value="jquery/lang/openajax/openajax.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/event/hashchange/hashchange.js</label>
+	<input type="checkbox" value="jquery/event/hashchange/hashchange.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/controller/view/view.js</label>
+	<input type="checkbox" value="jquery/controller/view/view.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/view/view.js</label>
+	<input type="checkbox" value="jquery/view/view.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/dom/dom.js</label>
+	<input type="checkbox" value="jquery/dom/dom.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/dom/closest/closest.js</label>
+	<input type="checkbox" value="jquery/dom/closest/closest.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/dom/compare/compare.js</label>
+	<input type="checkbox" value="jquery/dom/compare/compare.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/dom/cookie/cookie.js</label>
+	<input type="checkbox" value="jquery/dom/cookie/cookie.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/lang/json/json.js</label>
+	<input type="checkbox" value="jquery/lang/json/json.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/dom/cur_styles/cur_styles.js</label>
+	<input type="checkbox" value="jquery/dom/cur_styles/cur_styles.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/dom/dimensions/dimensions.js</label>
+	<input type="checkbox" value="jquery/dom/dimensions/dimensions.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/dom/fixture/fixture.js</label>
+	<input type="checkbox" value="jquery/dom/fixture/fixture.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/dom/form_params/form_params.js</label>
+	<input type="checkbox" value="jquery/dom/form_params/form_params.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/dom/within/within.js</label>
+	<input type="checkbox" value="jquery/dom/within/within.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/event/default/default.js</label>
+	<input type="checkbox" value="jquery/event/default/default.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/event/drag/drag.js</label>
+	<input type="checkbox" value="jquery/event/drag/drag.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/lang/vector/vector.js</label>
+	<input type="checkbox" value="jquery/lang/vector/vector.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/event/livehack/livehack.js</label>
+	<input type="checkbox" value="jquery/event/livehack/livehack.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/event/drag/limit/limit.js</label>
+	<input type="checkbox" value="jquery/event/drag/limit/limit.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/event/drag/scroll/scroll.js</label>
+	<input type="checkbox" value="jquery/event/drag/scroll/scroll.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/event/drop/drop.js</label>
+	<input type="checkbox" value="jquery/event/drop/drop.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/event/drag/step/step.js</label>
+	<input type="checkbox" value="jquery/event/drag/step/step.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/event/hover/hover.js</label>
+	<input type="checkbox" value="jquery/event/hover/hover.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/event/offline/offline.js</label>
+	<input type="checkbox" value="jquery/event/offline/offline.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/event/resize/resize.js</label>
+	<input type="checkbox" value="jquery/event/resize/resize.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/event/select/select.js</label>
+	<input type="checkbox" value="jquery/event/select/select.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/lang/rsplit/rsplit.js</label>
+	<input type="checkbox" value="jquery/lang/rsplit/rsplit.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/model/model.js</label>
+	<input type="checkbox" value="jquery/model/model.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/model/associations/associations.js</label>
+	<input type="checkbox" value="jquery/model/associations/associations.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/model/backup/backup.js</label>
+	<input type="checkbox" value="jquery/model/backup/backup.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/model/list/list.js</label>
+	<input type="checkbox" value="jquery/model/list/list.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/model/list/cookie/cookie.js</label>
+	<input type="checkbox" value="jquery/model/list/cookie/cookie.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/model/list/local/local.js</label>
+	<input type="checkbox" value="jquery/model/list/local/local.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/model/service/service.js</label>
+	<input type="checkbox" value="jquery/model/service/service.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/model/service/json_rest/json_rest.js</label>
+	<input type="checkbox" value="jquery/model/service/json_rest/json_rest.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/model/service/twitter/twitter.js</label>
+	<input type="checkbox" value="jquery/model/service/twitter/twitter.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/model/service/yql/yql.js</label>
+	<input type="checkbox" value="jquery/model/service/yql/yql.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/model/validations/validations.js</label>
+	<input type="checkbox" value="jquery/model/validations/validations.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/tie/tie.js</label>
+	<input type="checkbox" value="jquery/tie/tie.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/view/ejs/ejs.js</label>
+	<input type="checkbox" value="jquery/view/ejs/ejs.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/view/helpers/helpers.js</label>
+	<input type="checkbox" value="jquery/view/helpers/helpers.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/view/jaml/jaml.js</label>
+	<input type="checkbox" value="jquery/view/jaml/jaml.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/view/micro/micro.js</label>
+	<input type="checkbox" value="jquery/view/micro/micro.js" name="plugins[]">
+</div>
+
+<div class="plugin">
+	<label>jquery/view/tmpl/tmpl.js</label>
+	<input type="checkbox" value="jquery/view/tmpl/tmpl.js" name="plugins[]">
+</div>
+
+<input type="submit" value="Submit">
+</form>
+		<script type='text/javascript' src='../jquery.js'></script>
+		<script type='text/javascript' src='../dist/jquery.formparams.js'></script>
+		<script type='text/javascript' src='download.js'></script>
+	</body>
+</html>
